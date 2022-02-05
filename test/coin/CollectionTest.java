@@ -10,6 +10,7 @@ public class CollectionTest {
 
     @Test
     public void CollectionTest() {
+//        List<Double> diffOptionsPresence1 = (new OptionEvent(300)).getDiffOptionsPresence(1000);
         OptionEvent collectionEvent = new OptionEvent(8);
         List<Double> diffOptionsPresence = collectionEvent.getDiffOptionsPresence(4);
         Assert.assertEquals(1d / 512d, diffOptionsPresence.get(0), 0d);
